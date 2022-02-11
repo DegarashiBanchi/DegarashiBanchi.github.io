@@ -47,6 +47,29 @@ body {
   }
 }
 
+/*見出しとタイトルの装飾
+not指定することで同じくh2タグを使用している目次のタイトル部分のみ、装飾を変えている*/
+
+.single_css h2:not(.mokuji_title) {
+  padding: 2em 0em;
+  text-align: center;
+  margin: 2em 0em;
+  border-bottom: 3px dashed #444444;
+}
+
+.single_css h3{
+  box-shadow: -4px 2px;
+  padding-left: .4em;
+  }
+
+.single_css h3:first-letter{
+    color:#444444;
+    font-size: 1.4em;
+}
+
+
+
+
 /*hrによる水平線のデザインを変更*/
 
 .horizon_line {
@@ -409,11 +432,13 @@ main {
   margin: 1rem;
 }
 
-/*コンテンツ部分のスペーサー。文字の入る部分をemで指定、マージンで左右幅を調整する*/
+/*コンテンツ部分のスペーサー。文字の入る部分をemで指定、マージンで左右幅を調整する
+パディングでコンテンツ下のスペースを確保もしている*/
 .content_space
 {
   margin: 0 auto;
   max-width: 40em;
+  padding: 0 0 4rem;
 }
 @media screen and (max-width:599px) {
     /*　画面サイズが599pxからはここを読み込む　*/
