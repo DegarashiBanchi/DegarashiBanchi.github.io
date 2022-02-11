@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Archives on 出涸らし闇ナベ</title>
-    <link>http://example.org/archives/</link>
+    <link>https://degarashibanchi.github.io/archives/</link>
     <description>Recent content in Archives on 出涸らし闇ナベ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <copyright>Copyright © 2021 Niboshi Dashigara</copyright><atom:link href="http://example.org/archives/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2022 Niboshi Dashigara</copyright><atom:link href="https://degarashibanchi.github.io/archives/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
