@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="61.44" height="61.44" viewBox="0.00 0.00 512.00 512.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g stroke-linecap="round" id="ベクター出力黒">
+  <style>
+  @media (prefers-color-scheme: dark) {
+    path {
+      fill: #fdf8ed; <!-- ダークモード時のカラー -->
+      opacity: 0.5;
+    }
+  }
+</style>
+<path d="M96.00,136.00 L416.00,136.00" fill="none" stroke="rgb(68, 68, 68)" stroke-width="24.00" stroke-opacity="1.00" stroke-linejoin="round"/>
+<path d="M216.00,136.00 L216.00,96.00" fill="none" stroke="rgb(68, 68, 68)" stroke-width="24.00" stroke-opacity="1.00" stroke-linejoin="round"/>
+<path d="M216.00,96.00 L296.00,96.00" fill="none" stroke="rgb(68, 68, 68)" stroke-width="24.00" stroke-opacity="1.00" stroke-linejoin="round"/>
+<path d="M296.00,96.00 L296.00,136.00" fill="none" stroke="rgb(68, 68, 68)" stroke-width="24.00" stroke-opacity="1.00" stroke-linejoin="round"/>
+<path d="M416.00,228.00 Q416.00,310.00 416.00,392.00 Q416.00,416.00 384.00,416.00 Q256.00,416.00 128.00,416.00 Q96.00,416.00 96.00,392.00 Q96.00,310.00 96.00,228.00" fill="none" stroke="rgb(68, 68, 68)" stroke-width="24.00" stroke-opacity="1.00" stroke-linejoin="round"/>
+<path d="M96.00,216.00 L96.00,216.00" fill="none" stroke="rgb(68, 68, 68)" stroke-width="24.00" stroke-opacity="1.00" stroke-linejoin="round"/>
+<path d="M416.00,216.00 L416.00,216.00" fill="none" stroke="rgb(68, 68, 68)" stroke-width="24.00" stroke-opacity="1.00" stroke-linejoin="round"/>
+<path d="M136.00,296.00 L216.00,216.00" fill="none" stroke="rgb(68, 68, 68)" stroke-width="24.00" stroke-opacity="1.00" stroke-linejoin="round"/>
+<path d="M216.00,216.00 L376.00,336.00" fill="none" stroke="rgb(68, 68, 68)" stroke-width="24.00" stroke-opacity="1.00" stroke-linejoin="round"/>
+<path d="M256.00,176.00 L296.00,216.00" fill="none" stroke="rgb(68, 68, 68)" stroke-width="24.00" stroke-opacity="1.00" stroke-linejoin="round"/>
+<path d="M296.00,176.00 L336.00,216.00" fill="none" stroke="rgb(68, 68, 68)" stroke-width="24.00" stroke-opacity="1.00" stroke-linejoin="round"/>
+<path d="M136.00,256.00 L376.00,256.00" fill="none" stroke="rgb(68, 68, 68)" stroke-width="24.00" stroke-opacity="1.00" stroke-linejoin="round"/>
+<path d="M296.00,216.00 L296.00,336.00" fill="none" stroke="rgb(68, 68, 68)" stroke-width="24.00" stroke-opacity="1.00" stroke-linejoin="round"/>
+<path d="M296.00,336.00 L176.00,416.00" fill="none" stroke="rgb(68, 68, 68)" stroke-width="24.00" stroke-opacity="1.00" stroke-linejoin="round"/>
+</g>
+</svg>

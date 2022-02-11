@@ -1,0 +1,632 @@
+body {
+  /*ヘッダーとフッターを画面上下に合わせるため、最初に設定されているマージンを0にする*/
+  margin: 0;
+  /*背景色、フォントサイズ、フォントカラー、フォントの設定*/
+  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", 'Helvetica Neue', 'Segoe UI', sans-serif;
+  background-color: #fdf8ed;
+  font-size: 16px;
+  color: #444444;
+  line-height: 1.7em;
+  /*カーニング = 文字詰めの拡張機能を使用するための設定。*/
+  font-feature-settings: "palt" 1;
+  /*グリッドレイアウトのための設定
+    高さは100vhで画面一杯に、横は各グリッドで分け合うように*/
+    min-height: 100vh;
+    display: grid;
+    grid-template:
+    "header" 80px
+    "main" 1fr
+    "footer"
+    ;
+}
+
+/*----------single.html用のレイアウト----------*/
+
+.single_css
+{
+  display: grid;
+  grid-template:
+  "bread bread"
+  "main side" 1fr
+  "footer footer"
+  /3fr 1fr;
+
+  /*PC表示時、目次を追従させるために上寄せにする*/
+  align-items: start;
+}
+/*画面幅が小さい時は消去し、下記のハンバーガーメニューに切り替え*/
+@media screen and (max-width:33.2em) {
+.single_css {
+  display: grid;
+  grid-template:
+  "bread"
+  "side"
+  "main" 1fr
+  "footer"
+
+  }
+}
+
+/*hrによる水平線のデザインを変更*/
+
+.horizon_line {
+  background-color: #fdf8ed;
+  border-top: 2px dashed #444444;
+}
+
+/*----------ヘッダー----------*/
+
+header {
+  grid-area: header;
+  background-color: #444444;
+  color: #fdf8ed;
+}
+
+.header_logo
+{
+  /*ロゴの左マージンを設定*/
+  margin-left: 1em;
+}
+
+/*========= 検索窓のためのCSS ===============*/
+
+/*検索窓のエリア*/
+ #search-wrap {
+     position: absolute;/*絶対配置にして*/
+	 z-index: 2;/*最前面に設定。数字は変更可*/
+	 top:24px;
+	 right:0px;
+}
+
+#search-wrap input#searchKeyword{
+  width: 10em;
+  background-color: #fdf8ed;
+  -webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+
+}
+
+#search-wrap input#searchButton{
+visibility:hidden;
+    width: 0;
+}
+
+/*----------検索結果----------*/
+
+#result {
+      margin: 1em;
+    }
+    .item_title {
+      color: #444;
+      font-weight: bolder;
+    }
+    .item_excerpt {
+        background: #fdf8ed;
+  margin: 0.5em 2em 1em;
+  padding: 0.5em;
+  border: dashed 2px #444444;
+    }
+    .item_excerpt b {
+      background: pink;
+    }
+
+
+/*----------タブボックス----------*/
+
+input[type=radio]
+{
+  /*ラジオボタンを消去*/
+  display: none;
+}
+
+.tub_menu
+{
+  /*ラベルの大きさと区切り線を追加。calcで100%をカテゴリ数で割っている。*/
+  text-align: center;
+  width: calc(100%/4);
+  outline: solid 1px #fdf8ed;
+}
+
+.tub_box
+{
+  background-color: #444444;
+  color: #fdf8ed;
+
+  /*タブを横に並べるためにフレキシブルボックスに変更、折り返しありの中央寄せ*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.tub_content
+{
+  /*一番下に表示するため、オーダーを大きな数に変更*/
+  order: 99;
+
+  /*色と大きさの設定*/
+  background-color: #fdf8ed;
+  color: #444444;
+  width: 100%;
+  height: 100%;
+
+  /*普段は非表示*/
+  display: none;
+}
+
+/*チェックが入ったら表示
+  チェックの入ったラジオボタンの次（+）の次（+）にあるコンテンツを表示する*/
+:checked + label + .tub_content
+{
+  display: block;
+}
+
+/*----------タグ一覧----------*/
+
+.tug_list ul
+{
+  /*タグ一覧をフレキシブルボックスで横並べにしつつ折り返す*/
+  display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+}
+
+.tug_list li
+{
+  /*横の点を消し、タグ同士の間隔を調整*/
+  list-style: none;
+      padding-right: 1em;
+}
+
+/*デザイン*/
+.tug_list a {
+  display: inline-block;
+    margin: 0 .1em .6em 0;
+    padding: .6em;
+    line-height: 1;
+    text-decoration: none;
+    color: #444444;
+    background-color: #fdf8ed;
+    border: 1px solid #444444;
+    border-left: 5px solid #444444;
+}
+
+
+/*----------パンくずリスト----------*/
+
+.breadcrumbs__wrapper
+{
+  grid-area: bread;
+  background-color: #444;
+  color: #fdf8ed;
+
+  /*文字回りの左右の余白を調整*/
+  padding: 0em 1em;
+}
+
+@media screen and (max-width:599px) {
+    /*　画面サイズが599pxからはここを読み込む　*/
+.breadcrumbs__wrapper
+{
+  /*リストを画面幅に合わせて折り返しを禁止、X方向のスクロールをオンに*/
+  width: 100vw;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+}
+
+.breadcrumbs ul
+{
+  /*マージンとパディングを削除*/
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs li
+{
+  display: inline;
+  list-style: none;
+}
+
+.breadcrumbs li:not(:last-child)::after
+{
+  content: '>';
+  padding: 0 0.5em;
+}
+
+.breadcrumbs li a
+{
+  color: #fdf8ed;
+}
+
+/*----------目次----------*/
+
+.table_of_article_PC
+{
+  /*グリッドエリアを指定。区切り線を引きパディングで文字位置を調整*/
+  grid-area: side;
+  border-left: solid 0.4em #444;
+  padding: 1em;
+
+  /*追従させる設定*/
+  position: sticky;
+  top: 0;
+
+  /*縦の長さを画面いっぱいに*/
+  height: 100vh;
+}
+
+.table_of_article_PC a
+{
+  color: #444;
+}
+
+@media screen and (max-width:33.2em) {
+  .table_of_article_PC {
+    /*画面サイズが小さいときは消す*/
+    display: none;
+  }
+}
+
+/* -------------ハンバーガーメニュー----------- */
+
+
+/* チェックボックスを非表示にする */
+
+.drawer_hidden {
+  display: none;
+}
+
+
+/* ハンバーガーアイコンの設置スペース */
+
+.drawer_open {
+  position: absolute;
+  right: 3em;
+  top: 2em;
+  z-index: 100;
+  /* 重なり順を一番上にする */
+  cursor: pointer;
+}
+
+/* ハンバーガーメニューのアイコン */
+
+.drawer_open span, .drawer_open span:before, .drawer_open span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background: #333;
+  transition: 0.5s;
+  position: absolute;
+
+}
+
+/* 三本線の一番上の棒の位置調整 */
+
+.drawer_open span:before {
+  bottom: 8px;
+}
+
+
+/* 三本線の一番下の棒の位置調整 */
+
+.drawer_open span:after {
+  top: 8px;
+}
+
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+
+#drawer_input:checked ~ .drawer_open span {
+  background: rgba(255, 255, 255, 0);
+}
+
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+
+#drawer_input:checked ~ .drawer_open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+  background: #fdf8ed;
+}
+
+#drawer_input:checked ~ .drawer_open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+  background: #fdf8ed;
+}
+
+
+/* メニューのデザイン*/
+
+.nav_content {
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  /* メニューを画面の外に飛ばす */
+  z-index: 99;
+  transition: .5s;
+  background-color: #444444;
+  color: #fdf8ed;
+
+  /*メニュー内文字の余白を調整*/
+  padding: 1em;
+}
+
+
+/* メニュー左の中黒を消す */
+
+#TableOfContents ul
+{
+  list-style: none;
+  padding: 0;
+}
+
+/* アイコンがクリックされたらメニューを表示 */
+
+#drawer_input:checked ~ .nav_content {
+  left: 50%;
+  /* メニューを画面に入れる */
+}
+
+.table_of_article_SP {
+  /*画面サイズが大きいときは消去*/
+  display: none;
+}
+@media screen and (max-width:33.2em) {
+.table_of_article_SP
+  {/*画面サイズが小さくなったときに現れる*/
+    display:block;
+
+    /*追従部分*/
+    position: -webkit-sticky;
+    /* safari用 */
+    position: sticky;
+    top: 0;
+  }
+}
+
+.table_of_article_SP a
+{
+  color: #fdf8ed;
+}
+
+/*----------メイン*----------*/
+
+main {
+  grid-area: main;
+}
+
+.main_text {
+  /*メインテキストの余白を弄る*/
+  margin: 1rem;
+}
+
+/*コンテンツ部分のスペーサー。文字の入る部分をemで指定、マージンで左右幅を調整する*/
+.content_space
+{
+  margin: 0 auto;
+  max-width: 40em;
+}
+@media screen and (max-width:599px) {
+    /*　画面サイズが599pxからはここを読み込む　*/
+.content_space
+ {
+    margin: 0 5%;
+  }
+}
+
+/* -------------記事カード----------- */
+
+.article_card_group
+{
+  /*画面が小さいときに縦に並ぶようフレキシブルボックス化*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.article_card
+{
+  /*大きさ設定*/
+  max-width: 480px;
+  min-width: 280px;
+  border: solid .1em #444444;
+  box-shadow: .5em .5em 1px #444444;
+  margin: 1em;
+
+  /*日時、カテゴリ、プレビュー文、タグをフレキシブルボックスで並べる*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.article_card_yyyymmdd_category
+{
+  background-color: #444444;
+  color: #fdf8ed;
+
+  /*横一杯にして背景色を適用
+    フレキシブルボックスで日付とカテゴリを横並べの中央揃えにし、高さも決める*/
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2em;
+}
+
+.article_card_title
+{
+  /*記事タイトルは太字、かつややサイズ大きめにしてマージンをとる*/
+  margin: 0.5em;
+  font-weight: bold;
+}
+
+.article_card_tug_area
+{
+  /*タグを横並べにするためにフレキシブルボックス化*/
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.article_card_tug
+{
+  /*上下左右のマージンをとる*/
+  margin: .5em;
+}
+
+
+/* -------------ページ送り----------- */
+
+.pagination_area
+{
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+.pagination > li {
+  display: inline;
+}
+.pagination > li > a,
+.pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #444444;
+  text-decoration: none;
+}
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  margin-left: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  z-index: 2;
+  color: #23527c;
+  background-color: #eee;
+  border-color: #ddd;
+  border-radius: 4px;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  z-index: 3;
+  color: #fdf8ed;
+  cursor: default;
+  background-color: #444444;
+  border-radius: 4px;
+}
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+  color: #777;
+  cursor: not-allowed;
+  background-color: #fff;
+  border-color: #ddd;
+  display: none;
+}
+/* -------------フッター----------- */
+
+footer {
+  grid-area: footer;
+  background-color: #444444;
+  color: #fdf8ed;
+  height: auto;
+}
+
+/* -------------サイトミニマップ----------- */
+
+.site_minimap
+{
+  /*サイトマップをグリッドレイアウトに*/
+  display:grid;
+  grid-template:
+  "..... text ..... info ....."
+  / 1em 1fr 1em 1fr 1em  ;
+
+  margin: 2em;
+}
+@media screen and (max-width:33.2em) {
+  .site_minimap {
+    grid-template:
+    "....."
+    "info"
+    "....."
+     "text"
+    ".....";
+  }
+}
+
+
+/*site_minimap以下のすべてのリストの黒点を消去し、その分だけ左スペースを詰める
+ついでにマージンを調整*/
+.site_minimap ul{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/*リストアイテムすべての左スペースを若干→に。*/
+.site_minimap li{
+  margin-left: 1em;
+}
+
+/*色を変え、下線を消去*/
+.site_minimap li a{
+  color: #fdf8ed;
+  text-decoration: none;
+
+}
+
+.site_minimap h3, h4{
+  margin-bottom: 0;
+}
+
+#site_minimap_info
+{
+  grid-area: info;
+}
+
+#site_minimap_text
+{
+  grid-area: text;
+}
