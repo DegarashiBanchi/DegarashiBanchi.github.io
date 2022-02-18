@@ -20,6 +20,26 @@ body {
     ;
 }
 
+/*----------引用レイアウト----------*/
+
+blockquote{
+  border-left:3px solid #44444475;
+  background-color: #dedede;
+  padding-left:10px;
+}
+blockquote:before{
+    color:#DA8596;
+}
+blockquote p{
+    padding-left:30px;
+}
+blockquote cite{
+    display: block;
+    font-size:0.8rem;
+    color:#cfa28d;
+    text-align:right;
+}
+
 /*----------single.html用のレイアウト----------*/
 
 .single_css

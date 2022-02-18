@@ -4,22 +4,64 @@ var data = [
   {
     url: "https://degarashibanchi.github.io/articles_text/",
     title: "Articles_Texts",
-    date: "2022-02-11T09:25:00+09:00",
+    date: "2022-02-18T18:12:13+09:00",
     body: "Articles_Texts"
 
   },
   {
     url: "https://degarashibanchi.github.io/categories/",
     title: "Categories",
-    date: "2022-02-11T09:25:00+09:00",
+    date: "2022-02-18T18:12:13+09:00",
     body: "Categories"
 
   },
   {
     url: "https://degarashibanchi.github.io/tags/",
     title: "Tags",
-    date: "2022-02-11T09:25:00+09:00",
+    date: "2022-02-18T18:12:13+09:00",
     body: "Tags"
+
+  },
+  {
+    url: "https://degarashibanchi.github.io/tags/%E3%82%AF%E3%83%A9%E3%83%95%E3%83%88/",
+    title: "クラフト",
+    date: "2022-02-18T18:12:13+09:00",
+    body: "クラフト"
+
+  },
+  {
+    url: "https://degarashibanchi.github.io/",
+    title: "出涸らし闇ナベ",
+    date: "2022-02-18T18:12:13+09:00",
+    body: "出涸らし闇ナベ"
+
+  },
+  {
+    url: "https://degarashibanchi.github.io/tags/%E6%89%8B%E5%B8%B3/",
+    title: "手帳",
+    date: "2022-02-18T18:12:13+09:00",
+    body: "手帳"
+
+  },
+  {
+    url: "https://degarashibanchi.github.io/articles_text/20220218/",
+    title: "手帳を作り直すことについて　01",
+    date: "2022-02-18T18:12:13+09:00",
+    body: "手帳を作り直すことについて　01 手帳を作り直すことについて　01 ブログ用に撮った自作手帳 3つ折りでそれなりに気に入ってはいるけど そろそろ作り直したいところ pic.twitter.com/jTrDnKv3pj \u0026mdash; 出汁殻ニボシ (@Degarashi_Banch) 2022年2月18日 　全くもって唐突だが、これが今現在使用している手帳である。 手帳とはいっても、なにせ厚紙と布を接着剤で張り付けただけの簡素な作りだから、そう大した代物ではない。 材料さえ揃えれば30分程で作れるし、乾燥時間を考えても2時間あれば十分だ。 材料も、表紙・裏表紙・帯ポケットそれぞれに使う3種類の布と、適当な厚紙、後は布用接着剤で問題ない。どれも思い立ったその日に百円ショップで入手できるから、うっかり出先で手帳を作りたくなった場合でも即時対応が可能である。 そして、こんな作りでありながらそれなりに耐久性が高いのも便利なポイント。作成したのが2019/4/12となっているので、そろそろ3年目に突入しようかという、しぶとい奴である。 　何故突然こんなものを出したのかというと、この手帳の出来に不満があるからである。 上でぺらぺらと薄っぺらい褒め言葉を並べておいて何をいきなりと思われるかもしれないが、3年弱も使っていると細かな不満が積もりあがって目に付き始めてくる。ざっと書き出してみると…… 改造案 下敷き 　この手帳、緑色の部分は帆布という厚手の布で出来ており、これはなかなか頑丈で汚れも付きにくく、水に濡れてもそこまで痛まないという大変に便利な素材なのだが、いかんせん目が粗く、この上でモノを書くとペン先がめり込んで紙の上に糸の模様が出てきてしまうことがある。 それを避けるために、手帳の内側には厚紙を模様付きの紙で覆った、いわば下敷きのようなモノを敷いているのだけど、どうも薄すぎて頼りない。書いているうちにイヤな曲がり方をすることがある。良くない。 なので、この部分の厚みを増やすか、あるいはPPシート的な一定以上の硬さのあるモノに取り替えてしまいたい。 ペンの収納 　昔から筆箱がそこまで好きではなかった。別に筆箱そのものに恨みとかはないけど、荷物が増えるのが凄くイヤだった。 だから手帳の作成計画を練る時に「とりあえず最低限の筆記用具は一緒に持ち運べるようにしよう！」と決めた。その結果が、本の帯のように手帳の下半分を覆っているポケットだ。 山折りにした薄い布を表紙と裏表紙で挟み込んで固定しただけのどエラいシンプルな仕組みで、ペンの他にA5サイズまでの紙ならホイホイ挟んで置ける。 置けるのだが……特に何も考えず、適当な長さの布で作ったため、どのペンもやや斜めにしないと固定することが出来ないという問題点がある。 これを解消するためには、ポケットとは別のところにペンを挟んでおくスペースを作る必要がある。 市販のモノを見てみると、手帳を閉じるためのベルトがそのままペンホルダーになっているタイプなどが見つかる。この辺をどうにか使えないだろうか……。 内側の紙の模様が目に悪い 手帳の内側に貼ってある紙 じっと見てると目がチカチカしてくる… pic.twitter.com/LbU4aiX6qB \u0026mdash; 出汁殻ニボシ (@Degarashi_Banch) February 18, 2022 　換えよう。 　とまあ、軽く考えてもこのくらいの改造案が出てくる。 どうせこうやって記事に出来るのだし、早速改造に着手するとしよう。"
+
+  },
+  {
+    url: "https://degarashibanchi.github.io/categories/%E6%97%A5%E8%A8%98/",
+    title: "日記",
+    date: "2022-02-18T18:12:13+09:00",
+    body: "日記"
+
+  },
+  {
+    url: "https://degarashibanchi.github.io/articles_text/20220214/",
+    title: "xxx",
+    date: "2022-02-14T20:39:39+09:00",
+    body: "xxx あけましておめでとうございます 今年もいいことがあれ！ pic.twitter.com/uzoLCwTXYX \u0026mdash; 出汁殻ニボシ (@Degarashi_Banch) 2022年1月1日 タイトル x. Markdown CheetSheet Text Format Italic（斜体） Italic（斜体） Emphasis（強調） Emphasis（強調） Strikethrough（取り消し線） これは詳細表示の例です。詳細をこっちに書きます。 This is inline. List text test test text test test text test test Horizontal rules Blockquotes（引用） This is Blockquotes Links（参照） yonehub blog Images（画像） Tables（表） id name date 1 test 2019-01-01 2 test 2019-01-02 3 test 2019-01-03 1 2 3 4 5 public class Main { public static void main(String... args) { System.out.println(\u0026#34;Hello\u0026#34;); } }"
 
   },
   {
@@ -34,20 +76,6 @@ var data = [
     title: "その他",
     date: "2022-02-11T09:25:00+09:00",
     body: "その他"
-
-  },
-  {
-    url: "https://degarashibanchi.github.io/",
-    title: "出涸らし闇ナベ",
-    date: "2022-02-11T09:25:00+09:00",
-    body: "出涸らし闇ナベ"
-
-  },
-  {
-    url: "https://degarashibanchi.github.io/categories/%E6%97%A5%E8%A8%98/",
-    title: "日記",
-    date: "2022-02-11T09:25:00+09:00",
-    body: "日記"
 
   },
   {
