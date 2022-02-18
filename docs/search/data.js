@@ -58,13 +58,6 @@ var data = [
 
   },
   {
-    url: "https://degarashibanchi.github.io/articles_text/20220214/",
-    title: "xxx",
-    date: "2022-02-14T20:39:39+09:00",
-    body: "xxx あけましておめでとうございます 今年もいいことがあれ！ pic.twitter.com/uzoLCwTXYX \u0026mdash; 出汁殻ニボシ (@Degarashi_Banch) 2022年1月1日 タイトル x. Markdown CheetSheet Text Format Italic（斜体） Italic（斜体） Emphasis（強調） Emphasis（強調） Strikethrough（取り消し線） これは詳細表示の例です。詳細をこっちに書きます。 This is inline. List text test test text test test text test test Horizontal rules Blockquotes（引用） This is Blockquotes Links（参照） yonehub blog Images（画像） Tables（表） id name date 1 test 2019-01-01 2 test 2019-01-02 3 test 2019-01-03 1 2 3 4 5 public class Main { public static void main(String... args) { System.out.println(\u0026#34;Hello\u0026#34;); } }"
-
-  },
-  {
     url: "https://degarashibanchi.github.io/articles_text/first/",
     title: "ことはじめ",
     date: "2022-02-11T09:25:00+09:00",
